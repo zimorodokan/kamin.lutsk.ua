@@ -1,0 +1,78 @@
+Carousels
+	https://developers.google.com/search/docs/guides/mark-up-listings
+	для рубрики журналу
+	https://kaminy.lutsk.ua/ag030-kaminy/
+	<script type="application/ld+json">
+		{
+			"@context":"http://schema.org",
+			"@type":"ItemList",
+			"itemListElement":[
+				{
+					"@type":"ListItem",
+					"position":1,
+					"url": "https://kaminy.lutsk.ua/a0629-yak-pravylno-rozpalyuvaty-kamin/"
+				},
+				{
+					"@type":"ListItem",
+					"position":2,
+					"url": "https://kaminy.lutsk.ua/a0409-shyber-v-kamini/"
+				},
+				{
+					"@type":"ListItem",
+					"position":3,
+					"url": "https://kaminy.lutsk.ua/a0697-kamin-v-kvartyri/"
+				},
+				{
+					"@type":"ListItem",
+					"position":4,
+					"url": "https://kaminy.lutsk.ua/a0693-3349/"
+				},
+				{
+					"@type":"ListItem",
+					"position":5,
+					"url": "https://kaminy.lutsk.ua/a0326-kaminnyj-zub/"
+				},
+				{
+					"@type":"ListItem",
+					"position":6,
+					"url": "https://kaminy.lutsk.ua/a0701-3357/"
+				},
+				{
+					"@type":"ListItem",
+					"position":7,
+					"url": "https://kaminy.lutsk.ua/a0008-podvijnyj-dopal-v-kamini/"
+				}
+			]
+		}
+	</script>
+
+
+
+
+
+	для статті
+	https://developers.google.com/search/docs/data-types/article
+	https://kaminy.lutsk.ua/a0629-yak-pravylno-rozpalyuvaty-kamin/
+	Headlines should not exceed 110 characters.
+	The URL to an image that is representative of the article. Only a marked-up image that directly belongs to the article should be specified. Images should be at least 696 pixels wide.
+
+	Additional image guidelines:
+		Every page must contain at least one image (whether or not you include markup). Google will pick the best image to display in Search results based on the aspect ratio and resolution.
+		Image URLs must be crawlable and indexable.
+		Images must represent the marked up content.
+		Images must be in .jpg, .png, or. gif format.
+		For best results, provide multiple high-resolution images (minimum of 300k pixels when multiplying width and height) with the following aspect ratios: 16x9, 4x3, and 1x1.
+
+		<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Article",
+			"headline": "Як швидко і правильно розпалити камін без диму",
+			"image": [
+				"https://example.com/photos/1x1/photo.jpg",
+				"https://example.com/photos/4x3/photo.jpg",
+				"https://example.com/photos/16x9/photo.jpg"
+			]
+
+		}
+	</script>

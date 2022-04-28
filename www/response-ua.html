@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>response</title>
+	<meta name="description" content="response">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Luchesk: Все для камінів">
+	<meta property="og:image" content="">
+	<link rel="canonical" href="/">
+	<link rel="alternate" hreflang="uk" href="/">
+	<link rel="alternate" hreflang="ru" href="/">
+	<style>
+		<!--#include virtual="/-/css/luchesk.css" -->
+	</style>
+</head>
+<body data-project="fireplace" data-page-type="response">
+	<!--#include virtual="/inc/project-header-logged.inc" -->
+	<main>
+		<div class="user-cabinet">
+			<div class="first">
+				<div class="menu">
+					<div class="header">Кабінет користувача</div>
+					<div class="items">
+						<div class="item profile"><a href="user-ua.html">Обліковий запис</a></div>
+						<div class="item profits"><a href="user-cabinet-profits-ua.html">Мої вигоди</a></div>
+						<div class="item bookmarks"><a href="bookmarks-ua.html">Вибране</a></div>
+						<div class="item history"><a href="history-ua.html">Історія замовлень</a></div>
+						<div class="item response current"><a href="response-ua.html">Написати відгук</a></div>
+						<div class="item logout"><a href="/">Вийти</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="second">
+				<h1>Вибране</h1>
+				<div class="text">Будь ласка, оцініть компанію та залишіть відгук про нашу роботу у соціальній мережі Facebook або на мапі Google.</div>
+				<div class="cards">
+					<div class="card">
+						<div><img src="/img/facebook-review-ua.png" alt=""></div>
+						<a href="https://www.facebook.com/pg/LucheskUa/reviews/" class="button type1 facebook">Написати відгук</a>
+					</div>
+					<div class="card">
+						<div><img src="/img/google-review-ua.png" alt=""></div>
+						<a href="https://goo.gl/maps/v5x4cDboc4s" class="button type1 google">Написати відгук</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--#include virtual="/inc/project-footer.inc" -->
+	<script src="/-/js/luchesk.js"></script>
+	<script src="/userjs/user11.js"></script>
+	<script>
+		if (Luchesk) {
+			if (typeof Luchesk.Data === 'object') {
+				Luchesk.Data.page = {
+					'type': 'response',
+				};
+			}
+			else {
+				console.error('Wrong Luchesk.Data type.');
+			}
+		}
+		else {
+			console.error('Global variable Luchesk not exists.');
+		}
+	</script>
+</body>
+</html>

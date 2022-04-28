@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>order</title>
+	<meta name="description" content="order">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Luchesk: Все для камінів">
+	<meta property="og:image" content="">
+	<link rel="canonical" href="/">
+	<link rel="alternate" hreflang="uk" href="/">
+	<link rel="alternate" hreflang="ru" href="/">
+	<style>
+		<!--#include virtual="/-/css/luchesk.css" -->
+	</style>
+</head>
+<body data-project="fireplace" data-page-type="order">
+	<!--#include virtual="/inc/project-short-header.inc" -->
+	<main>
+		<h1>Оформлення замовлення</h1>
+		<div class="blocks">
+			<form action="/" name="form-user">
+				<div class="header">Контактні дані</div>
+				<div class="form-input">
+					<label for="form-user-name">Прізвище, Ім’я</label>
+					<input class="block" type="text" name="form-user-name" id="form-user-name" autocomplete="off" required>
+					<div class="input-error-text" data-error-type="1">Заповніть</div>
+				</div>
+				<div class="form-input">
+					<label for="form-user-phone-number">Номер мобільного телефону</label>
+					<div class="input-telephone-code">
+						<input class="block" type="tel" name="form-user-phone-number" id="form-user-phone-number" autocomplete="off" required pattern="[0-9]{9}" maxlength="9" minlength="9">
+					</div>
+					<div class="input-error-text" data-error-type="1">Заповніть</div>
+				</div>
+				<div class="form-input">
+					<label for="form-user-email">Адреса електронної пошти</label>
+					<input class="block" type="email" name="form-user-email" id="form-user-email" autocomplete="off" required>
+					<div class="input-error-text" data-error-type="1">Заповніть</div>
+				</div>
+				<div class="form-block">
+					<div>Методи оплати</div>
+					<div class="form-radio">
+						<input class="radio" id="form-payment-method-delivery" name="form-payment_type" type="radio" required value="delivery">
+						<label for="form-payment-method-delivery">При отриманні у відділенні транспортної компанії</label>
+					</div>
+					<div class="form-radio">
+						<input class="radio" id="form-payment-method-card" name="form-payment_type" type="radio" required value="card">
+						<label for="form-payment-method-card">Онлайн на банківську картку Visa/Mastercard </label>
+					</div>
+					<div class="form-radio">
+						<input class="radio" id="form-payment-method-account" name="form-payment_type" type="radio" required value="account">
+						<label for="form-payment-method-account">На розрахунковий рахунок</label>
+					</div>
+				</div>
+				<div class="form-textarea">
+					<label for="form-user-comment">Коментар</label>
+					<textarea name="form-user-comment" id="form-user-comment" autocomplete="off"></textarea>
+				</div>
+				<button class="button type1 green" type="submit">НАДІСЛАТИ</button>
+			</form>
+			<div class="goods">
+				<div class="header">Ваше замовлення</div>
+				<div class="product">
+					<div class="image" data-for-insert-img-url="https://kaminy.lutsk.ua/-/uploads/ru/00/00/04/77/proposal-3117740452.jpg"></div>
+					<div class="text">
+						<div class="name">Кремнієво-кальцієва плита для термоізоляції Skamol Super Isol</div>
+						<div class="number-price">5 &times; 600 грн</div>
+						<div class="amount">3000 грн</div>
+					</div>
+				</div>
+				<div class="product">
+					<div class="image" data-for-insert-img-url="https://kaminy.lutsk.ua/-/uploads/ru/00/00/51/71/proposal-3853147520.jpg"></div>
+					<div class="text">
+						<div class="name">Камінна топка Gavryliv & Sons B-700 Камінна топка КаміннатопкаКамінна топка</div>
+						<div class="number-price">5 &times; 18810 грн</div>
+						<div class="amount">94050 грн</div>
+					</div>
+				</div>
+				<div class="total-amount">Всього: 97050 грн</div>
+				<a class="button type1 white" href="/basket-ua.html">Редагувати</a>
+			</div>
+		</div>
+	</main>
+	<!--#include virtual="/inc/project-short-footer.inc" -->
+	<script src="/-/js/luchesk.js"></script>
+	<script src="/userjs/user0.js"></script>
+	<script>
+		if (Luchesk) {
+			if (typeof Luchesk.Data === 'object') {
+				Luchesk.Data.page = {
+					'type': 'order',
+				};
+			}
+			else {
+				console.error('Wrong Luchesk.Data type.');
+			}
+		}
+		else {
+			console.error('Global variable Luchesk not exists.');
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>payment</title>
+	<meta name="description" content="payment">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="canonical" href="http://k.luchesk.ua/payment-ua.html">
+	<link rel="alternate" hreflang="uk" href="https://kaminy.lutsk.ua/payment/">
+	<link rel="alternate" hreflang="ru" href="https://kamin.lutsk.ua/payment/">
+	<style>
+		<!--#include virtual="/-/css/luchesk.css" -->
+	</style>
+</head>
+<body data-project="fireplace" data-page-type="standard">
+	<!--#include virtual="/inc/project-header.inc" -->
+	<main>
+		<article class="standard-text">
+			<h1>Способи розрахунку за товари та послуги</h1>
+			<section>
+				<h1>Оплата готівкою</h1>
+				<p>Оплата готівкою можлива в салоні компанії. Розрахунок проводиться у національній валюті за курсом, визначеним на момент замовлення.</p>
+			</section>
+			<section>
+				<h1>Безготівковий розрахунок</h1>
+				<p>Менеджер магазину надсилає рахунок-фактуру на вказану вами адресу електронної пошти. Усі необхідні документи щодо придбання товару по перерахунку надаються разом з цим товаром</p>
+			</section>
+			<section>
+				<h1>Післяплата</h1>
+				<p>Розрахунок за товар здійснюється після отримання вами замовлення у транспортній компанії. Крім вартості замовлення та доставки додатково ви маєте сплатити комісію транспортної компанії за перерахунок нам коштів.</p>
+			</section>
+			<section>
+				<h1>Оплата через систему Приват24</h1>
+				<p>Веб-сторінка магазину скерує вас на сторінку системи Приват24 з налаштованими реквізитами для оплати товарів чи послуг, замовлених у нашому магазині.</p>
+			</section>
+			<section>
+				<h1>Оплата через касу чи термінал самообслуговування ПриватБанку</h1>
+				<p>Ми надсилаємо вам текстове повідомлення з усіма необхідними реквізитами на вказаний вами номер мобільного телефону.</p>
+			</section>
+		</article>
+	</main>
+	<!--#include virtual="/inc/project-footer.inc" -->
+	<script src="/-/js/luchesk.js"></script>
+	<script src="/userjs/user0.js"></script>
+	<script>
+		if (Luchesk) {
+			if (typeof Luchesk.Data === 'object') {
+				Luchesk.Data.page = {
+					'type': 'standard',
+					'currentPageHeaderMainMenuSection': '',
+				};
+			}
+			else {
+				console.error('Wrong Luchesk.Data type.');
+			}
+		}
+		else {
+			console.error('Global variable Luchesk not exists.');
+		}
+	</script>
+</body>
+</html>

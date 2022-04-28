@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>authorization</title>
+	<meta name="description" content="authorization">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Luchesk: Все для камінів">
+	<meta property="og:image" content="">
+	<link rel="canonical" href="/">
+	<link rel="alternate" hreflang="uk" href="/">
+	<link rel="alternate" hreflang="ru" href="/">
+	<style>
+		<!--#include virtual="/-/css/luchesk.css" -->
+	</style>
+</head>
+<body data-project="fireplace" data-page-type="authorization">
+	<!--#include virtual="/inc/project-header.inc" -->
+	<main>
+		<h1>Авторизація</h1>
+		<div class="container">
+			<div class="text">Увійти за допомогою електронної пошти</div>
+			<form action="/" name="form-user">
+				<div class="form-input">
+					<label for="form-user-email">Електронна пошта</label>
+					<input class="block" type="email" name="form-user-email" id="form-user-email" autocomplete="off" required>
+					<div class="input-error-text" data-error-type="1">Вкажіть адресу електронної пошти</div>
+				</div>
+				<button type="submit" class="button type1 green">Отримати доступ</button>
+			</form>
+			<div class="text">або через соціальну мережу</div>
+			<div class="buttons">
+				<button type="button" class="button type1 facebook">Facebook</button>
+				<button type="button" class="button type1 google">Google</button>
+			</div>
+		</div>
+	</main>
+	<!--#include virtual="/inc/project-footer.inc" -->
+	<script src="/-/js/luchesk.js"></script>
+	<script src="/userjs/user0.js"></script>
+	<script>
+		if (Luchesk) {
+			if (typeof Luchesk.Data === 'object') {
+				Luchesk.Data.page = {
+					'type': 'authorization',
+				};
+			}
+			else {
+				console.error('Wrong Luchesk.Data type.');
+			}
+		}
+		else {
+			console.error('Global variable Luchesk not exists.');
+		}
+	</script>
+</body>
+</html>

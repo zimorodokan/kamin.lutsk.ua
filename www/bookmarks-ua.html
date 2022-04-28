@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>bookmarks</title>
+	<meta name="description" content="bookmarks">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Luchesk: Все для камінів">
+	<meta property="og:image" content="">
+	<link rel="canonical" href="/">
+	<link rel="alternate" hreflang="uk" href="/">
+	<link rel="alternate" hreflang="ru" href="/">
+	<style>
+		<!--#include virtual="/-/css/luchesk.css" -->
+	</style>
+</head>
+<body data-project="fireplace" data-page-type="bookmarks">
+	<!--#include virtual="/inc/project-header-logged.inc" -->
+	<main>
+		<div class="user-cabinet">
+			<div class="first">
+				<div class="menu">
+					<div class="header">Кабінет користувача</div>
+					<div class="items">
+						<div class="item profile"><a href="user-ua.html">Обліковий запис</a></div>
+						<div class="item profits"><a href="user-cabinet-profits-ua.html">Мої вигоди</a></div>
+						<div class="item bookmarks current"><a href="bookmarks-ua.html">Вибране</a></div>
+						<div class="item history"><a href="history-ua.html">Історія замовлень</a></div>
+						<div class="item response"><a href="response-ua.html">Написати відгук</a></div>
+						<div class="item logout"><a href="/">Вийти</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="second">
+				<h1>Вибране</h1>
+				<div class="product-catalogue wrap">
+					<div class="item bookmarked" data-product-key="key">
+						<div class="image" data-for-insert-img-url="//kaminy.lutsk.ua/-/uploads/ru/00/00/38/78/proposal-3654129172.jpg"></div>
+						<div class="brand">Parkanex</div>
+						<div class="name"><a href="/product-ua.html">Stylowa мідна патина 21×43 з жалюзі</a></div>
+						<div class="price">3266 грн</div>
+						<div class="bookmark"></div>
+						<div class="action-label"><div>акція</div></div>
+						<div class="basket"><button type="button" class="button type2 green">Додати в кошик</button><span class="in">В корзине</span></div>
+					</div>
+					<div class="item bookmarked in-basket" data-product-key="key">
+						<div class="image" data-for-insert-img-url="//kaminy.lutsk.ua/-/uploads/ru/00/00/38/73/proposal-4057057057.jpg"></div>
+						<div class="brand">Parkanex</div>
+						<div class="name"><a href="/product-ua.html">Stylowa золота патина 21×43 з жалюзі</a></div>
+						<div class="price">3266 грн</div>
+						<div class="bookmark"></div>
+						<div class="action-label"><div>акція</div></div>
+						<div class="basket"><button type="button" class="button type2 green">Добавить в корзину</button><span class="in">В корзине</span></div>
+					</div>
+					<div class="item action bookmarked" data-product-key="key">
+						<div class="image" data-for-insert-img-url="//kaminy.lutsk.ua/-/uploads/ru/00/00/36/84/proposal-2846003856.jpg"></div>
+						<div class="brand">Kratki</div>
+						<div class="name"><a href="/product-ua.html">Міла тунель 120×900</a></div>
+						<div class="price">3006 грн</div>
+						<div class="bookmark"></div>
+						<div class="action-label"><div>акція</div></div>
+						<div class="basket"><button type="button" class="button type2 green">Добавить в корзину</button><span class="in">В корзине</span></div>
+					</div>
+					<div class="item bookmarked in-basket" data-product-key="key">
+						<div class="image" data-for-insert-img-url="//kaminy.lutsk.ua/-/uploads/ru/00/00/36/85/proposal-31813619.jpg"></div>
+						<div class="brand">Kratki</div>
+						<div class="name"><a href="/product-ua.html">Міла тунель 140×1132</a></div>
+						<div class="price">3006 грн</div>
+						<div class="bookmark"></div>
+						<div class="action-label"><div>акція</div></div>
+						<div class="basket"><button type="button" class="button type2 green">Добавить в корзину</button><span class="in">В кошику</span></div>
+					</div>
+					<div class="item bookmarked" data-product-key="key">
+						<div class="image" data-for-insert-img-url="//kaminy.lutsk.ua/-/uploads/ru/00/00/32/53/proposal-3844856088.jpg"></div>
+						<div class="brand">Kratki</div>
+						<div class="name"><a href="/product-ua.html">Золота 17×49 з жалюзі</a></div>
+						<div class="price">2847 грн</div>
+						<div class="bookmark"></div>
+						<div class="action-label"><div>акція</div></div>
+						<div class="basket"><button type="button" class="button type2 green">Добавить в корзину</button><span class="in">В корзине</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--#include virtual="/inc/project-footer.inc" -->
+	<script src="/-/js/luchesk.js"></script>
+	<script src="/userjs/user11.js"></script>
+	<script>
+		if (Luchesk) {
+			if (typeof Luchesk.Data === 'object') {
+				Luchesk.Data.page = {
+					'type': 'bookmarks',
+				};
+			}
+			else {
+				console.error('Wrong Luchesk.Data type.');
+			}
+		}
+		else {
+			console.error('Global variable Luchesk not exists.');
+		}
+	</script>
+</body>
+</html>
